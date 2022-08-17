@@ -16,7 +16,7 @@ jobs:
     - name: install packages
       run: brew install wget mingw-w64 cmake nasm libtool automake meson glslang
     - name: inspecting python
-      run: find /usr/local/lib/ --name depfixer.py || exit 1
+      run: find /usr/local/lib/ depfixer.py || exit 1
     - name: make
       run: make
     - name: make check
